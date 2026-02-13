@@ -1,0 +1,41 @@
+{
+  "setting": "TransFusion_ETTh1_sl96_ld128_h8_nl6_seed42",
+  "model": "TransFusion",
+  "dataset": "ETTh1",
+  "shapes": {
+    "raw_T": 17420,
+    "raw_D": 7,
+    "train_w": [
+      8545,
+      96,
+      7
+    ],
+    "val_w": [
+      2881,
+      96,
+      7
+    ],
+    "test_w": [
+      2881,
+      96,
+      7
+    ],
+    "synthetic": [
+      512,
+      96,
+      7
+    ]
+  },
+  "metrics": {
+    "discriminative_train": 0.49029126213592233,
+    "predictive_mae": 0.21635348090785556
+  },
+  "timing_seconds": {
+    "train": 185.02552151679993,
+    "sample": 545.287516117096
+  },
+  "notes": {
+    "scaling": "min-max scaling fit on train split",
+    "metrics_space": "metrics computed on scaled [0,1] windows"
+  }
+}
