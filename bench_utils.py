@@ -20,6 +20,6 @@ def DeclareArg(name: str, arg_type: Callable[[str], Any], default: Any, help_tex
     """
     _parser.add_argument(f"--{name}", type=arg_type, default=default, help=help_text)
 
-    # Parse known args so scripts can be extended without breaking other params.
+    
     args, _ = _parser.parse_known_args()
     return getattr(args, name)

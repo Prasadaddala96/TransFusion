@@ -1,4 +1,4 @@
-# bench_train.py (TransFusion)
+
 import os
 import json
 import time
